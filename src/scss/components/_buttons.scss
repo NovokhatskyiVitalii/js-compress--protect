@@ -1,0 +1,12 @@
+.start {
+    @include button($blue-btn, $white, 6px);
+    flex: 1 1 300px;
+}
+.clear {
+    @include button($red-btn, $white, 6px);
+    flex: 1 1 200px;
+}
+.copy {
+    @include button($green-btn, $white, 6px);
+    flex: 1 1 200px;
+}

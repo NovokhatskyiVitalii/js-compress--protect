@@ -1,0 +1,95 @@
+.textarea {
+    align-content: center;
+    height: 100%;
+    .container {
+    }
+    &-content {
+        border-radius: 16px;
+        border: 1px $border-color solid;
+        padding: 20px;
+        box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.1);
+        background: $white;
+
+        &__input {
+            position: relative;
+            overflow: hidden;
+            & textarea {
+                padding: 20px;
+                font-size: 18px;
+                width: 100%;
+                height: 350px;
+                border-radius: 8px;
+                border: 1px $border-color solid;
+                resize: none;
+                color: $text-color;
+                &:focus {
+                    border: 2px solid $area-border-green;
+                    outline: none;
+                }
+                &::selection {
+                    background-color: $yellow;
+                    color: $black;
+                }
+            }
+            &-modal {
+                position: absolute;
+                width: 100%;
+                height: 99%;
+                left: 0;
+                top: 0;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: none;
+
+                &__content {
+                    width: 100%;
+                    max-width: 280px;
+                    border-radius: 8px;
+                    background: $white;
+                    border: 2px $border-color solid;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 10px;
+                    padding: 20px;
+                }
+
+                &.copy {
+                    display: flex;
+                    background: $area-body-green;
+                    @include fade-in;
+
+                    & span {
+                        color: $text-color;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+                }
+                &.error {
+                    display: flex;
+                    background: $area-body-red;
+                    @include fade-in;
+
+                    & span {
+                        color: $text-color;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+                }
+                &.fade-out {
+                    @include fade-out;
+                }
+            }
+        }
+        &__buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,457 @@
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \********************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap);
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss (1) ***!
+  \************************************************************************************************************************************************************/
+body {
+  font-family: "Fjalla One", sans-serif;
+  background: #fffafa;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.6s ease-in;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px #a9a9a9 solid;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.header-logo__title {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #696969;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+.footer {
+  padding: 40px 0;
+}
+.footer-info {
+  text-align: center;
+}
+.footer-info p {
+  color: #696969;
+  font-size: 18px;
+}
+.footer-info p a {
+  color: #4682b4;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+.footer-info p a:hover {
+  text-decoration: underline;
+}
+
+.start {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 5px;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  font-size: 18px;
+  flex: 1 1 300px;
+}
+.start:hover {
+  background-color: rgb(0, 118.56, 234);
+}
+.start:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.clear {
+  background-color: #f2000d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 5px;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  font-size: 18px;
+  flex: 1 1 200px;
+}
+.clear:hover {
+  background-color: rgb(191, 0, 10.2603305785);
+}
+.clear:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.copy {
+  background-color: #32cd32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 5px;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  font-size: 18px;
+  flex: 1 1 200px;
+}
+.copy:hover {
+  background-color: #28a428;
+}
+.copy:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.textarea {
+  align-content: center;
+  height: 100%;
+}
+.textarea-content {
+  border-radius: 16px;
+  border: 1px #a9a9a9 solid;
+  padding: 20px;
+  box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.textarea-content__input {
+  position: relative;
+  overflow: hidden;
+}
+.textarea-content__input textarea {
+  padding: 20px;
+  font-size: 18px;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  border: 1px #a9a9a9 solid;
+  resize: none;
+  color: #696969;
+}
+.textarea-content__input textarea:focus {
+  border: 2px solid rgb(34, 139, 34);
+  outline: none;
+}
+.textarea-content__input textarea::selection {
+  background-color: #ffca28;
+  color: #000;
+}
+.textarea-content__input-modal {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.textarea-content__input-modal__content {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 8px;
+  background: #fff;
+  border: 2px #a9a9a9 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 20px;
+}
+.textarea-content__input-modal.copy {
+  display: flex;
+  background: rgba(34, 139, 34, 0.6);
+  animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.textarea-content__input-modal.copy span {
+  color: #696969;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.textarea-content__input-modal.error {
+  display: flex;
+  background: rgba(255, 0, 0, 0.6);
+  animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.textarea-content__input-modal.error span {
+  color: #696969;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.textarea-content__input-modal.fade-out {
+  animation: fadeOut 0.6s ease-in;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.textarea-content__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+textarea {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: thin;
+  scrollbar-color: #ffca28 hsla(0, 0%, 100%, 0.4);
+}
+textarea::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  padding-right: 10px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #ffca28;
+  border-radius: 16px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: hsla(0, 0%, 100%, 0.4);
+  border-radius: 16px;
+}
