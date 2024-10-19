@@ -8,11 +8,11 @@ const modalArea = document.querySelector("[modal-area]");
 
 const validateModalContent = {
   successCopy: {
-    icon: "../../src/images/icons/check.svg",
+    icon: "./src/images/icons/check.svg",
     title: "Your code has been copied",
   },
   error: {
-    icon: "../src/images/icons/error.svg",
+    icon: "./src/images/icons/error.svg",
     title: "Paste the code into the input field!",
   },
 };
